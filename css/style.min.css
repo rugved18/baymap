@@ -109,14 +109,45 @@ p > a:hover:before {
   -o-transform: scale(1);
   transform: scale(1);
 }
+/* updated my rugved */
 .navbar-custom {
-  margin-bottom: 0;
-  background: transparent;
-  font-family: Roboto medium;
-  border: 0;
-  min-height: 40px;
-  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #BA0021; 
+  z-index: 1000;
 }
+
+
+body {
+  margin-top: 40px;
+}
+
+
+@media (max-width: 500px) {
+  body {
+    margin-top: 0;
+  }
+}
+.navbar-brand img {
+  max-width: 100%; 
+  margin-top: 10px; 
+}
+@media (max-width: 768px) {
+  .navbar-brand img {
+    margin-top: 0; 
+  }
+}
+/* done */
+
+
+/* Your existing styles... (retain the rest of your CSS code) */
+body,
+h2 {
+  font-weight: 300;
+  font-family: "Alegreya Sans", Arial, sans-serif;
+}
+
 .navbar-custom .navbar-collapse {
   max-height: 230px;
   overflow: scroll;
@@ -399,21 +430,24 @@ p > a:hover:before {
 }
 .section#home {
   /* background-image: url(home.jpg); */
-  background: red;
+  background:#BA0021;
   color: #000;
 }
 .section#people {
-  background-image: url(vision.jpg);
+  background: rgb(229, 224, 224);
+  color: #000;
 }
 .section#research {
-  background-image: url(research.jpg);
+  background: rgb(229, 224, 224);
+  color: #000;
 }
 .section#consulting {
-  background-image: url(science.jpg);
+  background: rgb(229, 224, 224);
+  color: #000;
 }
 .section#connect {
-  /* background-image: url(connect.jpg); */
-  background: none;
+  background: rgb(229, 224, 224);
+  color: #000;
 }
 .bx-viewport,
 .bx-wrapper {
@@ -687,10 +721,13 @@ footer p.footer-text {
   animation: ripple 0.3s linear;
 }
 footer {
-  bottom: 0;
   position: fixed;
+  bottom: 0;
   width: 100%;
+  background-color: #aeaaaa; /* Gray background color */
+  z-index: 1000;
 }
+
 footer p.footer-text {
   display: inline-block;
   width: 55%;
